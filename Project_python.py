@@ -3,10 +3,7 @@
 #DATA COLLECTION
 
 import pandas as pd
-import pymysql 
-from sqlalchemy import create_engine
 import os
-import numpy as np
 
 os.chdir('C:/Users/Camille/Documents/Ecole/Ironhack/Week 2/Data_Pipeline_Project/Data')
 sharks = pd.read_csv('GSAF5.csv', encoding = "ISO-8859-1")
@@ -189,7 +186,7 @@ save_viz(sharks_sex_chart)
 sharks_activity = pd.Series(sharks.Activity.value_counts(), name ='Activities when attacked by a shark')
 
 # Creating a ranked bar chart of activities
-sharks_activity_chart=sharks_activity.plot.bar(fontsize=10, figsize=(8, 5)).set_title('Ranking of activities per total shark attacks', fontsize=15)
+sharks_activity_chart=sharks_activity.plot.bar(fontsize=10, figsize=(15, 10)).set_title('Ranking of activities per total shark attacks', fontsize=15)
 title='Ranking of activities per total shark attacks'
 save_viz(sharks_activity_chart)
 
@@ -198,22 +195,22 @@ sharks_country = pd.Series(sharks.Country.value_counts()).nlargest(10)
 sharks_country
 
 # Creating a ranked bar chart of countries
-sharks_country_chart=sharks_country.plot.bar(fontsize=10, figsize=(8, 5)).set_title('Top 10 countries per total number of shark attacks', fontsize=15)
+sharks_country_chart=sharks_country.plot.bar(fontsize=10, figsize=(15, 10)).set_title('Top 10 countries per total number of shark attacks', fontsize=15)
 title='Top 10 countries per total number of shark attacks'
 save_viz(sharks_country_chart)
 
 # Creating a ranked bar chart of areas for the US
-sharks_area_us_chart=sharks_area_us.Area.value_counts().nlargest(5).plot.bar(fontsize=10, figsize=(6, 5), color='Darkblue').set_title('Top 5 American regions per total number of shark attacks', fontsize=15)
+sharks_area_us_chart=sharks_area_us.Area.value_counts().nlargest(5).plot.bar(fontsize=10, figsize=(15, 10), color='Darkblue').set_title('Top 5 American regions per total number of shark attacks', fontsize=15)
 title='Top 5 American regions per total number of shark attacks'
 save_viz(sharks_area_us_chart)
 
 #Bar chart for Australian regions
-sharks_area_oz_chart=sharks_area_oz.Area.value_counts().nlargest(5).plot.bar(fontsize=10, figsize=(6, 5), color='Darkgreen').set_title('Top 5 Australian regions per total number of shark attacks', fontsize=15)
+sharks_area_oz_chart=sharks_area_oz.Area.value_counts().nlargest(5).plot.bar(fontsize=10, figsize=(15, 10), color='Darkgreen').set_title('Top 5 Australian regions per total number of shark attacks', fontsize=15)
 title='Top 5 Australian regions per total number of shark attacks'
 save_viz(sharks_area_oz_chart)
 
 #Bar chart for South Africa
-sharks_area_za_chart=sharks_area_za.Area.value_counts().nlargest(5).plot.bar(fontsize=10, figsize=(6, 5), color='Darkorange').set_title('Top 5 South African regions per total number of shark attacks', fontsize=15)
+sharks_area_za_chart=sharks_area_za.Area.value_counts().nlargest(5).plot.bar(fontsize=10, figsize=(15, 10), color='Darkorange').set_title('Top 5 South African regions per total number of shark attacks', fontsize=15)
 title='Top 5 South African regions per total number of shark attacks'
 save_viz(sharks_area_za_chart)
 
