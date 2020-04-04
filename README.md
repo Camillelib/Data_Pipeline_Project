@@ -15,8 +15,6 @@ In this project, the goal was to use Python and other resources to analyse a set
 3. Data manipulation including aggregation, etc.
 4. Data vizualisation (plot, table)
 
----
-
 
 ## Process followed:
 
@@ -43,9 +41,6 @@ In order to:
 * Protect specific zones if needed from these activities
 * Prove that most attacks aren't mortal and they are unprovoked, meaning happening where sharks live.
 * Identify the most likely victims to organize targeted campaigns of preventions.
-
-
-![Sharks](https://i.pinimg.com/474x/84/a4/11/84a4111793c0dc25d622ece09e9f56a7--great-white-shark-the-great-white.jpg)
 
 
 ### 2. Data cleaning
@@ -85,7 +80,7 @@ Charts obtained:
 * Countries with all attacks recorded ranked (barchart)
 * Within the top 3 countries for shark attacks, top 5 regions where attacks occur (barcharts) 
 
----
+## 
 
 ## Results:
 
@@ -107,7 +102,8 @@ Charts obtained:
 * Learning how to clean new data
 * Using plots (defining type of plot, color, title)
 
----
+
+## 
 
 
 ## Deliverables
