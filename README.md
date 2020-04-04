@@ -52,7 +52,7 @@ In order to:
     
 * Text cleaning: 
     * Renaming 4 columns
-    * Correting text in 4 columns
+    * Correcting text in 4 columns
     * Replacing missing text by 'UNKNOWN' in 6 columns
     
 * Identifying outliers and odd values:
