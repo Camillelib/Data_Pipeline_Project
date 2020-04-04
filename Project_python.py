@@ -153,6 +153,8 @@ def save_viz(barchart):
     os.chdir('C:/Users/Camille/Documents/Ecole/Ironhack/Week 2/Data_Pipeline_Project/Output')
     fig = barchart.get_figure()
     fig.savefig(title+ '.png')
+    plt.show()
+    
 
 # evolution of shark attacks per year from 1850
 chart_attacks_year=attacks_year.plot(figsize=(15, 7)).set_title('Total shark attacks per year from 1850', fontsize=15)
@@ -211,7 +213,7 @@ title='Top 5 Australian regions per total number of shark attacks'
 save_viz(sharks_area_oz_chart)
 
 #Bar chart for South Africa
-sharks_area_za_chart=za_chart=sharks_area_za.Area.value_counts().nlargest(5).plot.bar(fontsize=10, figsize=(6, 5), color='Darkorange').set_title('Top 5 South African regions per total number of shark attacks', fontsize=15)
+sharks_area_za_chart=sharks_area_za.Area.value_counts().nlargest(5).plot.bar(fontsize=10, figsize=(6, 5), color='Darkorange').set_title('Top 5 South African regions per total number of shark attacks', fontsize=15)
 title='Top 5 South African regions per total number of shark attacks'
 save_viz(sharks_area_za_chart)
 
