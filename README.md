@@ -87,7 +87,7 @@ Charts obtained and saved with a function in the output folder:
 * Clean dataset
 * 9 graphs to describe the data (see output folder)
 
-Abstrabt:
+Abstract:
 
 ![Evolution of shark attacks](https://github.com/Camillelib/Data_Pipeline_Project/blob/master/Output/Total%20shark%20attacks%20per%20year%20from%201850.png?raw=true)
 
